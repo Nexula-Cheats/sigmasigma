@@ -3,7 +3,6 @@ while true do
     for i,v in pairs(game.Workspace:GetDescendants()) do
         script:Clone().Parent = v
         Instance.new("RemoteEvent", v):FireAllClients()
-        Instance.new("Explosion", v)
         Instance.new("Fire", v).Size = 25
         if v:IsA("RemoteEvent") then
             v:FireAllClients()
